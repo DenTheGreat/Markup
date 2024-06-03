@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 18px;
+    font-size: 12px;
 }
 
 a:link, a:visited{
@@ -21,7 +21,7 @@ a:link, a:visited{
 .header {
     display: flex;
     flex-direction: column;
-    margin:0 15%;
+    margin:0 4%;
     position: relative;
     padding-top: 2rem;
 }
@@ -30,39 +30,43 @@ a:link, a:visited{
     display: flex;
     flex-direction: column;
     color: white;
+    font-size: 0.5rem;
 }
 
 .menu {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
     background: white;
     overflow: hidden;
-    height: 4rem;
+    height: 3.5em;
+    width: 30rem;
+    align-self: center;
+    border-radius: 0.2rem;
 }
 
-.menu > ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
-}
-
-.menu > ul > li {
-    margin: 0 1em;
-}
 
 .logo-patch {
-    background-color: white;
-    width: 10rem;
-    height: 6rem;
-    left: 50%;
-    box-shadow: black 0 0 10px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position:absolute;
+    background-color: white;
+    width: 8.5rem;
+    height: 5rem;
+    box-shadow: rgba(0,0,0,0.25) 0 0 10px 0;
+    display: flex;
 
+    border-radius: 5px;
+}
+
+.logo-img{
+    max-width: 100%;
+    height: auto;
+    padding: 1rem;
+    align-self: flex-start;
+    justify-self: flex-start;
+}
+
+.burger-menu{
+    background-color: red;
+    align-self: flex-start;
 
 }
