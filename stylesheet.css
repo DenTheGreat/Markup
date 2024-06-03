@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 12px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
 }
 
 a:link, a:visited{
@@ -16,6 +17,8 @@ a:link, a:visited{
     background-image: url("./assets/first-block-bg.png");
     width: 100%;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -38,35 +41,53 @@ a:link, a:visited{
     flex-direction: row;
     align-items: center;
     background: white;
-    overflow: hidden;
-    height: 3.5em;
-    width: 30rem;
+    height: 2.5em;
+    width: 21.25rem;
     align-self: center;
     border-radius: 0.2rem;
+    position: relative;
+    padding: 0 0.25rem;
 }
-
 
 .logo-patch {
-    position:absolute;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: white;
-    width: 8.5rem;
-    height: 5rem;
-    box-shadow: rgba(0,0,0,0.25) 0 0 10px 0;
+    width: 6rem;  /* Adjust as needed */
+    height: 4rem;  /* Adjust as needed */
+    box-shadow: rgba(0, 0, 0, 0.25) 0 0 10px 0;
     display: flex;
-
+    align-content: center;
+    justify-content: center;
     border-radius: 5px;
 }
+
 
 .logo-img{
     max-width: 100%;
     height: auto;
-    padding: 1rem;
-    align-self: flex-start;
-    justify-self: flex-start;
+    padding: 0.5rem;
 }
 
 .burger-menu{
-    background-color: red;
-    align-self: flex-start;
+    margin:0 0.5rem;
 
+}
+
+.download-btn {
+    margin-left: auto;
+    color:white;
+    background-color:#5956E9;
+    box-shadow: none;
+    border:none;
+    padding: 0.55rem 0.3rem;
+    border-radius: 0.2rem;
+}
+
+.app-download-container{
+    margin:10rem 1rem;
+    background: white;
+    box-shadow:blue 10px 10px ;
 }
