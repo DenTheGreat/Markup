@@ -2,7 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 18px;
 }
+
+a:link, a:visited{
+    text-decoration: none;
+    color:black;
+}
+
+
 
 .first-block {
     background-image: url("./assets/first-block-bg.png");
@@ -13,8 +21,9 @@
 .header {
     display: flex;
     flex-direction: column;
-    margin: 0 15%;
+    margin:0 15%;
     position: relative;
+    padding-top: 2rem;
 }
 
 .header-info {
@@ -28,11 +37,8 @@
     justify-content: space-between;
     align-items: center;
     background: white;
-    position: relative;
-    height: 5rem;
     overflow: hidden;
-    z-index: 1;
-
+    height: 4rem;
 }
 
 .menu > ul {
@@ -44,20 +50,19 @@
 }
 
 .menu > ul > li {
-    margin: 0 2em;
+    margin: 0 1em;
 }
 
 .logo-patch {
-    width: 15rem;
-    height: 10rem;
-    position: absolute;
-    top: 50%;
+    background-color: white;
+    width: 10rem;
+    height: 6rem;
     left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: black;
-    z-index: 5;
+    box-shadow: black 0 0 10px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    position:absolute;
+
+
 }
