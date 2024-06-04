@@ -1,3 +1,3 @@
 # Markup
 
-Mobile first website made manually from templade
+Mobile first website made manually from template
