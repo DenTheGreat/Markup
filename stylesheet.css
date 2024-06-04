@@ -9,6 +9,12 @@
     font-optical-sizing: auto;
 }
 
+h2,h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+
 a:link, a:visited {
     text-decoration: none;
     color: black;
@@ -16,9 +22,7 @@ a:link, a:visited {
 
 
 .first-block {
-    background-image: url("./assets/first-block-bg.png");
-    width: 100%;
-    height: 100vh;
+    background-image: url("./assets/first-block-bg.svg");
     display: flex;
     flex-direction: column;
 }
@@ -43,8 +47,8 @@ a:link, a:visited {
     flex-direction: row;
     align-items: center;
     background: white;
-    height: 2.5em;
-    width: 21.25rem;
+    height: 2.75rem;
+    width: 100%;
     align-self: center;
     border-radius: 0.2rem;
     position: relative;
@@ -84,8 +88,11 @@ a:link, a:visited {
     background-color: #5956E9;
     box-shadow: none;
     border: none;
-    padding: 0.55rem 0.3rem;
+    padding: 0.75rem 0.3rem;
     border-radius: 0.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.75rem;
 }
 
 .app-download-container {
@@ -134,4 +141,64 @@ a:link, a:visited {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+}
+
+.ui-view-img {
+    max-height: 100%;
+    width: auto;
+    align-self: center;
+    margin: 0 0 50%;
+}
+
+.second-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-app-block>ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 1.5rem;
+    list-style: none; /* Remove default list style */
+}
+
+.about-app-block>ul>li {
+    display: flex; /* Flex display for horizontal alignment */
+    align-items: flex-start; /* Align items to the top */
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem 5%;
+    text-align: start;
+    color: #6C6C72;
+    list-style-position: outside; /* Ensure list-style is outside */
+    margin:0 5%;
+}
+
+.about-app-block>ul>li::before {
+    content: url("/assets/icons/second-block-list-img.svg");
+    margin-right: 1rem; /* Space between icon and text */
+}
+
+.about-app-block>ul>li div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Space between h3 and text */
+    line-height: 1.5rem;
+}
+
+.about-app-block>ul>li>div>h3 {
+    color: black;
+    font-weight: 600;
+    margin: 0; /* Remove default margin */
+}
+
+
+
+.about-app-block>img{
+    display: block;
+    margin: 10% auto 10%;
+    width: 50%;
 }
