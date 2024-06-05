@@ -8,7 +8,7 @@
     font-optical-sizing: auto;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
     text-transform: uppercase;
     font-weight: 400;
 }
@@ -255,6 +255,8 @@ a:link, a:visited {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .dot {
@@ -302,7 +304,7 @@ a:link, a:visited {
 
 
 .sixth-block {
-    background: linear-gradient(to bottom, #5956E9 60%, white 40%);
+    background: linear-gradient(to bottom, #5956E9 70%, white 30%);
     color: white;
     text-align: center;
     display: flex;
@@ -319,15 +321,26 @@ a:link, a:visited {
 
 .sixth-block > img {
     width: 24rem;
-    margin: -15% auto 0;
+    margin: -15% auto -15%;
 }
 
 .seventh-block {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin: 10% 0;
     text-align: center;
+}
+
+.seventh-block-head {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 10%;
+}
+
+.seventh-block-head > h2 {
+    font-weight: 500;
+
 }
 
 .team-card {
@@ -335,16 +348,16 @@ a:link, a:visited {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     margin: 0 1rem;
     padding: 5rem 0.5rem 10%;
 }
 
-.team-card>img{
+.team-card > img {
     max-height: 19rem;
     margin: 0 auto 20%;
-}
 
+}
 
 .team-card > h1 {
     font-weight: 700;
@@ -356,10 +369,68 @@ a:link, a:visited {
     font-size: 1.25rem;
 }
 
-.team-social{
-    display:flex;
+.team-social {
+    display: flex;
     flex-direction: row;
-    gap: 4rem;
     justify-content: center;
-    margin: 10% 0 0;
+    margin: 10% 0 0
+}
+
+.team-social > img {
+    padding: 0 2rem 0;
+}
+
+.team-social > img {
+    border-right: black solid 1px;
+}
+
+.team-social > img:last-child {
+    border: none;
+}
+
+.eighth-block {
+    background-image: url("./assets/eight-block-bg.svg");
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.eighth-block-head {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: white;
+    margin: 0 10% 0;
+}
+
+.eighth-block-customer > h2 {
+    font-weight: 500;
+}
+
+.eighth-block-customer {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 0.5rem;
+    background: white;
+    width: 21.5rem;
+    height: 15.5rem;
+    border-radius: 10px;
+    margin: 0 5% 2rem;
+    gap: 2rem;
+}
+.eight-block-customer-head{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+.eight-block-customer-head>img{
+    max-width: 50px;
+    margin: 0 auto 1rem;
+}
+
+.white-dot {
+    height: 1rem;
+    width: 1rem;
+    background-color: white;
+    border-radius: 50%;
+
 }
