@@ -8,7 +8,7 @@
     font-optical-sizing: auto;
 }
 
-h2, h3 {
+h1, h2, h3, h4 {
     text-transform: uppercase;
     font-weight: 400;
 }
@@ -235,26 +235,26 @@ a:link, a:visited {
     margin: 0 10%;
 }
 
-.ui-view-features>img {
+.ui-view-features > img {
     height: 100%;
     width: 100%;
-    
+
 }
 
-.fourth-block{
-    background-color:white;
+.fourth-block {
+    background-color: white;
     align-items: center;
     text-align: center;
-    margin: 20% 10% ;
+    margin: 20% 10%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.slider{
+.slider {
     display: flex;
     flex-direction: row;
-    gap:1rem;
+    gap: 1rem;
 }
 
 .dot {
@@ -265,30 +265,30 @@ a:link, a:visited {
 
 }
 
-.text{
-    color:#6C6C72;
+.text {
+    color: #6C6C72;
 }
 
-.fifth-block{
+.fifth-block {
     margin: 5% 5%;
 }
 
-.margin-h-2{
-    margin:2rem 0;
+.margin-h-2 {
+    margin: 2rem 0;
 }
 
-.rating{
-    display:flex;
+.rating {
+    display: flex;
     flex-direction: row;
-    gap:1rem;
+    gap: 1rem;
 }
 
-.rating>div{
-    background-color:#5956E9;
+.rating > div {
+    background-color: #5956E9;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    color:white;
+    color: white;
     height: 6.25rem;
     width: 6rem;
     text-align: center;
@@ -296,28 +296,70 @@ a:link, a:visited {
     gap: 0.5rem;
 }
 
-.fifth-block > img{
+.fifth-block > img {
     margin: 20% 0;
 }
 
 
-.sixth-block{
-    background-color:#5956E9;
-    color:white;
+.sixth-block {
+    background: linear-gradient(to bottom, #5956E9 60%, white 40%);
+    color: white;
     text-align: center;
-    display:flex;
+    display: flex;
     flex-direction: column;
 
 }
 
-.sixth-block-text{
+.sixth-block-text {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     padding: 15% 10% 0;
 }
 
-.sixth-block > img{
+.sixth-block > img {
     width: 24rem;
-    margin: -15% 0 0;
+    margin: -15% auto 0;
+}
+
+.seventh-block {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 10% 0;
+    text-align: center;
+}
+
+.team-card {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    margin: 0 1rem;
+    padding: 5rem 0.5rem 10%;
+}
+
+.team-card>img{
+    max-height: 19rem;
+    margin: 0 auto 20%;
+}
+
+
+.team-card > h1 {
+    font-weight: 700;
+}
+
+.team-card > h3 {
+    color: #6C6C72;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.team-social{
+    display:flex;
+    flex-direction: row;
+    gap: 4rem;
+    justify-content: center;
+    margin: 10% 0 0;
 }
