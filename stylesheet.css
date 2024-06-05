@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +8,7 @@
     font-optical-sizing: auto;
 }
 
-h2,h3 {
+h2, h3 {
     text-transform: uppercase;
     font-weight: 400;
 }
@@ -153,9 +152,20 @@ a:link, a:visited {
 .second-block {
     display: flex;
     flex-direction: column;
+    padding: 0 0 20%;
 }
 
-.about-app-block>ul {
+
+.about-app-block-header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    margin: 10% 10% 0;
+}
+
+
+.about-app-block > ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,7 +175,7 @@ a:link, a:visited {
     list-style: none; /* Remove default list style */
 }
 
-.about-app-block>ul>li {
+.about-app-block > ul > li {
     display: flex; /* Flex display for horizontal alignment */
     align-items: flex-start; /* Align items to the top */
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
@@ -174,31 +184,59 @@ a:link, a:visited {
     text-align: start;
     color: #6C6C72;
     list-style-position: outside; /* Ensure list-style is outside */
-    margin:0 5%;
+    margin: 0 5%;
 }
 
-.about-app-block>ul>li::before {
+.about-app-block > ul > li::before {
     content: url("/assets/icons/second-block-list-img.svg");
     margin-right: 1rem; /* Space between icon and text */
 }
 
-.about-app-block>ul>li div {
+.about-app-block > ul > li div {
     display: flex;
     flex-direction: column;
     gap: 0.5rem; /* Space between h3 and text */
     line-height: 1.5rem;
 }
 
-.about-app-block>ul>li>div>h3 {
+.about-app-block > ul > li > div > h3 {
     color: black;
     font-weight: 600;
     margin: 0; /* Remove default margin */
 }
 
-
-
-.about-app-block>img{
+.about-app-block > img {
     display: block;
     margin: 10% auto 10%;
     width: 50%;
+}
+
+.third-block {
+    background-image: url("./assets/first-block-bg.svg");
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    padding: 15% 10%;
+    gap: 2rem;
+}
+
+.third-block > h2 {
+    font-weight: 500;
+
+}
+
+.third-block > img {
+    width: 3rem;
+    margin: auto;
+}
+
+.third-block > div {
+    margin: 0 10%;
+}
+
+.ui-view-features>img {
+    height: 100%;
+    width: 100%;
+    
 }
